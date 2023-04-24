@@ -37,23 +37,6 @@ profiles:
               persistent: true
               class: beta3
   placement:
-
-profiles:
-  compute:
-    node:
-      resources:
-        cpu:
-          units: 4
-        memory:
-          size: 16Gi
-        storage:
-          size: 100Gi
-          # - size: 100Mi
-          # - name: data
-          #   size: 400Gi
-          #   attributes:
-          #     persistent: true
-  placement:
     dcloud:
       attributes:
         host: akash
