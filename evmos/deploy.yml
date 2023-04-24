@@ -25,7 +25,6 @@ services:
       storage:
         data:
           mount: /root/.evmos
-
 profiles:
   compute:
     node:
@@ -35,12 +34,11 @@ profiles:
         memory:
           size: 32Gi
         storage:
-          size: 100Gi
-          # - size: 100Mi
-          # - name: data
-          #   size: 400Gi
-          #   attributes:
-          #     persistent: true
+          - name: data
+            size: 120Gi
+            attributes:
+              persistent: true
+              class: beta3
   placement:
     dcloud:
       attributes:
